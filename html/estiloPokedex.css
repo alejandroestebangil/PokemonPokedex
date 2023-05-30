@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    background: #f2f2f2;
+    
+
+    align-content: center;
+    text-align: center;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+
+table {
+    position: relative;
+    display: inline-table;
+    margin: 15px;
+    text-align: center;
+    line-height: 40px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #00c3ff;
+    width: 80%;
+    border-radius: .25rem;
+}
+.totales{
+    position:absolute;
+    width: 50%;
+    top: 200px;
+    text-align: center;
+    left: 25%;
+    right: 25%;
+    min-width: 600px;
+}
+.filtros {
+    position: relative;
+    display: inline-table;
+    margin-top: 100px;
+    margin-left: 0px;
+    text-align: left;
+    line-height: 40px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid #00d5ff;
+    width: 320px;
+    border-radius: .25rem;
+}
+.filtros td:first-child{
+    padding-left: 5px;
+}
+.filtros td{
+    padding-right: 7px;
+}
+.card td:last-child {
+    text-align: center;
+    padding-right: 20px;
+}
+
+th {
+    background: #0095ff;
+    color: #fff;
+    border: none;
+    text-align: center;
+    -webkit-text-stroke: 1px #fff;
+}
+table th {
+    border-bottom: #e3e1e1 1px solid;
+}
+
+.card {
+    position: relative;
+    display: inline-table;
+    margin: 15px;
+    text-align: left;
+    line-height: 40px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #05aef7;
+    width: 290px;
+    border-radius: .25rem;
+    
+}
+
+.card th, .administracion th {
+    background: #1ccaed;
+    color: #fff;
+    border: none;
+    text-align: center;
+    font-family: 'Pokemon Solid', sans-serif;
+    font-weight: 500;
+    padding-right: 25px;
+    border-bottom: #e3e1e1 1px solid;
+}
+
+.card th:first-child {
+    text-align: left;
+}
+.card th:first-child,
+.card td:first-child,
+.administracion th:first-child,
+.administracion td:first-child {
+    padding: 0 0px 0 10px;
+    
+}
+.administracion {
+    position: relative;
+    display: inline-table;
+    margin: 15px;
+    text-align: center;
+    line-height: 40px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid #1cb2ed;
+    width: 90%;
+    border-radius: .25rem;
+    right: 20px;
+    left: 10px;
+}
+.userAgent{
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+}
+.movimientos {
+    position: relative;
+    display: inline-table;
+    margin: 15px;
+    text-align: center;
+    line-height: 40px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid #1cb2ed;
+    border-radius: .25rem;
+
+}
+.movimientos th{
+    min-width: 90px;
+}
+.movimientos td:first-child{
+    text-align: center;
+    padding-left: 20px;
+    width:50px;
+}
+.movimientos td:last-child{
+    text-align: right;
+    padding-right: 5px;
+    
+}
+
+
+.portada {
+    margin: auto;
+    display: block;
+    height: 200px;
+    cursor: pointer;
+}
+.tipo{
+    border-radius: 5%;
+    text-align: center;
+    padding: 0 5px 0 5px;
+}
+.tipo:hover{
+    background-color: #aaa8a8;
+}
+tbody tr {
+    transition: all .25s ease;
+}
+
+tbody tr:hover {
+    background-color: #e3e1e1;
+    cursor: default;
+}
+
+tbody td {
+    border-bottom: 1px solid #ddd;
+}
+tbody td:first-child {
+    padding-left: 10px;
+}
+
+
+
+tfoot tr:last-child td {
+    border-bottom-left-radius: .25rem;
+    height: 100px;
+}
+
+.edicion {
+    margin: auto;
+    display: block;
+    height: 56px;
+    cursor: pointer;
+}
+
+.edicion:active {
+    height: 60px;
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.content-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Eliminamos la fecha que por defecto aparece en el desplegable */
+.content-select select::-ms-expand {
+    display: none;
+}
+
+.content-select {
+    max-width: 250px;
+    position: relative;
+}
+
+.content-select select {
+    display: inline-block;
+    cursor: pointer;
+    padding: 7px 10px;
+    height: 42px;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: 1em;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.content-select select:hover {
+    background-color: #e3e1e1;
+}
+
+
+input{
+    font-size: 15px;
+    width: 120px;
+    height: 30px;
+}
+.boolean{
+    width: 300px;
+}
+.submit{
+    width: 56px;
+    height: 56px;
+}
+/* Ocultar botón radio */
+input[id^="spoiler"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler"] + label {
+display:inline-block;
+width: 50px;
+background: #03bcf4;
+cursor: pointer;
+text-align: center;
+border-radius: 20%;
+border: #aaa8a8 solid 1px;
+color:#ccc;
+height: 35px;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler"]:checked + label {
+color: #333;
+background: #ccc;
+
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler"] ~ .spoiler {
+width: 100%;
+height: 0;
+overflow: hidden;
+opacity: 0;
+text-align: left;
+width: 50px;
+
+}
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler"]:checked + label + .spoiler{
+height: auto;
+opacity: 1;
+width: 300px;
+}
+
+
+
+.add, .inicio, .order, .tumba{
+    position: fixed;
+    display: block;
+    margin: auto;
+    height: 56px;
+    width: 56px;
+    cursor: pointer;
+    left: 10px;
+    z-index: 9999;
+}
+
+.order, .add, .inicio, .tumba, .logo {
+    top: 10px;
+}
+
+.order{
+    left: 500px;
+}
+
+.add{
+    left: 600px;
+}
+
+.tumba{
+    left: 700px;
+}
+
+.logo{
+    position: fixed;
+    display: block;
+    margin: auto;
+    height: 56px;
+    width: 116px;
+    cursor: pointer;
+    left: 1140px;
+    z-index: 9998;
+}
+
+
+.rectangulo{
+    position: fixed;
+    display: block;
+    margin: auto;
+    height: 75px;
+    width: 2222px;
+    cursor: pointer;
+    left: 0px;
+    top: 0px;
+    background-color: #fff;
+    z-index: 9997;
+    border-bottom: 2px solid #333;
+}
+
+.tapafiltro{
+    position: relative;
+}
+
+.tapafiltro img{
+    cursor: pointer;
+    position: absolute;
+    width: 1150px;
+    margin-top: 75px;
+    z-index: 995;
+}
